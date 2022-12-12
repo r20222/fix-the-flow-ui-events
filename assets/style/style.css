@@ -79,3 +79,181 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+/* animatie 1 */
+a:nth-of-type(1) {
+  position: relative;
+}
+.rotation{
+  animation-name: rotation;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotation{
+  0% {
+    transform: rotate( 0deg ) scale( 1 );
+  }
+  100% {
+    transform: rotate( 360deg ) scale( 1 );
+}
+}
+
+/* animatie 2 */
+
+a:nth-of-type(2) {
+  position: relative;
+}
+.collide{
+  animation-name: collide;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+@keyframes collide{
+  0%   {left: 0px;}
+  25%  {left: 23px;}
+  75%  {left: -23px}
+  100% {left: 0px;}
+}
+
+/* animatie drie */
+
+a:nth-of-type(3) {
+  position:relative;
+}
+.footbal{
+  animation-name: footbal;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  z-index:1;
+}
+@keyframes footbal{
+  0%   {
+    transform:rotate(0deg);
+  }
+  25%  {
+    transform:translateY(20rem) translateX(-26.3rem) rotate(100deg);
+  }
+  50% {
+    transform:translateY(35rem) translateX(26rem) rotate(360deg);
+  }
+  100% {
+    transform:rotate(360deg)
+  }
+}
+
+/* animatie 4 */
+a:nth-of-type(4) {
+  position: relative;
+}
+.green{
+  animation-name: green;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition: 1s;
+}
+
+@keyframes green{
+  50%{
+    background-color:green;
+  }
+}
+
+
+/* animatie 5 */
+a:nth-of-type(5) {
+  position: relative;
+  z-index: 2;
+}
+
+.bigger{
+  animation-name: bigger;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bigger{
+50%{
+  transform: translateY(50px) scale(3);
+}
+}
+
+/* animatie 6 */
+a:nth-of-type(6) {
+  position: relative;
+  /* z-index: 2; */
+}
+
+.longer{
+  animation-name: longer;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes longer{
+  50%{
+    padding-right: 12rem;
+  }
+}
+
+/* animatie 7 */
+a:nth-of-type(7) {
+  position: relative;
+  /* z-index: 2; */
+}
+
+.flip{
+  animation-name: flip;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes flip{
+  50%{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  }
+}
+
+/* animatie 8 */
+a:nth-of-type(8) {
+  position: relative;
+}
+.hanger{
+  animation-name: hanger;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes hanger{
+  25%{
+    padding-right: 300px;
+  }
+  50%{
+    transform: rotateY(360deg) rotate(120deg);
+  }
+  75%{
+    transform:translateY(45rem)
+  }
+}
+
+/* animatie 9 */
+a:nth-of-type(9) {
+  position: relative;
+}
+.falling{
+  animation-name: falling;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+@keyframes falling{
+  25%{
+    padding-right: 300px;
+  }
+  50%{
+    transform: rotate(90deg) translateX(5rem) translateY(-5rem);
+  }
+  75%{
+    transform:scale(4,2);
+  }
+}
