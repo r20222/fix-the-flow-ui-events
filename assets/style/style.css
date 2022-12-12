@@ -248,12 +248,34 @@ a:nth-of-type(9) {
 }
 @keyframes falling{
   25%{
-    padding-right: 300px;
+    padding-right: 700px;
   }
   50%{
-    transform: rotate(90deg) translateX(5rem) translateY(-5rem);
+    transform: rotate(70deg) translateX(50rem) translateY(-50rem);
   }
   75%{
-    transform:scale(4,2);
+    transform: rotate(70deg) translateX(-10rem) translateY(10rem);
+  }
+}
+
+/* animatie 10 */
+a:nth-of-type(10) {
+  position: relative;
+}
+.small{
+  animation-name: small;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+@keyframes small{
+  50%{
+    /* transform: scale(0.5); */
+    /* border-radius:100%;
+    padding-top:60px;
+    padding-bottom:60px; */
+    border-radius: 0px;
+    padding-top:60px;
+    padding-bottom:60px;
+
   }
 }

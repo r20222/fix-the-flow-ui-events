@@ -86,7 +86,17 @@ function buttonHang(){
 // negende button
 let interactionFalling = document.querySelector('a:nth-of-type(9)')
 interactionFalling.addEventListener('click', falling)
+interactionFalling.addEventListener('animationend', falling)
 
 function falling(){
   interactionFalling.classList.toggle('falling')
+}
+
+// tiende button
+let interactionSmall = document.querySelector('a:nth-of-type(10)')
+interactionSmall.addEventListener('click', buttonSmall)
+interactionSmall.addEventListener('animationend', buttonSmall)
+
+function buttonSmall(){
+  interactionSmall.classList.toggle('small')
 }
