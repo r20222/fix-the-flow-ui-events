@@ -85,18 +85,18 @@ function buttonHang(){
 
 // negende button
 let interactionFalling = document.querySelector('a:nth-of-type(9)')
-interactionFalling.addEventListener('click', falling)
-interactionFalling.addEventListener('animationend', falling)
+interactionFalling.addEventListener('mouseover', discoParty)
+interactionFalling.addEventListener('animationend', discoParty)
 
-function falling(){
-  interactionFalling.classList.toggle('falling')
+function discoParty(){
+  interactionFalling.classList.toggle('disco')
 }
 
 // tiende button
 let interactionSmall = document.querySelector('a:nth-of-type(10)')
-interactionSmall.addEventListener('click', buttonSmall)
-interactionSmall.addEventListener('animationend', buttonSmall)
+interactionSmall.addEventListener('mousewheel', buttonSquare)
+interactionSmall.addEventListener('animationend', buttonSquare)
 
-function buttonSmall(){
-  interactionSmall.classList.toggle('small')
+function buttonSquare(){
+  interactionSmall.classList.toggle('square')
 }
