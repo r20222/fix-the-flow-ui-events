@@ -290,33 +290,42 @@ a:nth-of-type(11) {
 @keyframes super-disco{
   10%{
    transform:scale(1.2);
-   background-image: radial-gradient(red, yellow);
+   background-image: radial-gradient(red, orange);
   }
   20%{
     transform:scale(1);
+    background-image: radial-gradient(yellow, green);
   }
   30%{
     transform:scale(1.3);
+    background-image: radial-gradient(blue, indigo);
   }
   40%{
     transform:scale(1);
+    background-image: radial-gradient(violet, red);
   }
   50%{
     transform:scale(1.2);
+    background-image: radial-gradient(orange, yellow);
   }
   60%{
     transform:scale(1);
+    background-image: radial-gradient(green, blue);
   }
   70%{
     transform:scale(1.3);
+    background-image: radial-gradient(indigo, violet);
   }
   80%{
     transform:scale(1);
+    background-image: radial-gradient(red, orange);
   }
   90%{
     transform:scale(1.2);
+    background-image: radial-gradient(yellow, green);
   }
   100%{
     transform:scale(1);
+    background-image: radial-gradient(blue, indigo);
   }
 }
