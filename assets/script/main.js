@@ -100,3 +100,13 @@ interactionSmall.addEventListener('animationend', buttonSquare)
 function buttonSquare(){
   interactionSmall.classList.toggle('square')
 }
+
+// elfde button
+
+let interactionSuperDisco = document.querySelector('a:nth-of-type(11)')
+interactionSuperDisco.addEventListener('click', discoDisco)
+interactionSuperDisco.addEventListener('animationend', discoDisco)
+
+function discoDisco(){
+  interactionSuperDisco.classList.toggle('super-disco')
+}
