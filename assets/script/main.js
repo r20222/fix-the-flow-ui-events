@@ -104,24 +104,17 @@ function buttonSquare(){
 // elfde button
 
 let interactionSuperDisco = document.querySelector('a:nth-of-type(11)')
+let selectAll = document.querySelectorAll('a')
 interactionSuperDisco.addEventListener('click', discoDisco)
 interactionSuperDisco.addEventListener('dblclick', discoDiscoEverywhere)
-interactionSuperDisco.addEventListener('animationend', discoDisco)
+interactionSuperDisco.addEventListener('animationend', discoDiscoEverywhere)
 
 function discoDisco(){
   interactionSuperDisco.classList.toggle('super-disco')
 }
 
 function discoDiscoEverywhere(){
-  interactionSuperDisco.classList.toggle('super-disco')
-  interactionSmall.classList.toggle('super-disco')
-  interactionFalling.classList.toggle('super-disco')
-  interactionHanger.classList.toggle('super-disco')
-  interactionFlip.classList.toggle('super-disco')
-  interactionLonger.classList.toggle('super-disco')
-  interactionBigger.classList.toggle('super-disco')
-  interactionGreen.classList.toggle('super-disco')
-  interactionFootbal.classList.toggle('super-disco')
-  interactionCollide.classList.toggle('super-disco')
-  interactionRotation.classList.toggle('super-disco')
+  selectAll.forEach(function(a){
+  a.classList.toggle('super-disco')
+  })
 }
