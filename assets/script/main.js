@@ -118,3 +118,24 @@ function discoDiscoEverywhere(){
   a.classList.toggle('super-disco')
   })
 }
+
+// 13e button
+
+let interactionRolling = document.querySelector('a:nth-of-type(13)')
+interactionRolling.addEventListener('click', rollingBall)
+interactionRolling.addEventListener('animationend', rollingBall)
+
+function rollingBall(){
+  interactionRolling.classList.toggle('rolling')
+}
+
+// 14e button
+
+let interactionDblBorder = document.querySelector('a:nth-of-type(14)')
+interactionDblBorder.addEventListener('click', doubleDouble)
+interactionDblBorder.addEventListener('animationend', doubleDouble)
+
+function doubleDouble(){
+  interactionDblBorder.classList.toggle('double-border')
+}
+
