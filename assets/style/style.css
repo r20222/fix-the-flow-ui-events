@@ -459,7 +459,7 @@ a:nth-of-type(17) {
 
 a:nth-of-type(18) {
   position: relative;
-  z-index: 20;
+  z-index: 25;
 }
 
 .outside{
