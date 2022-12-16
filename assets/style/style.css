@@ -504,3 +504,30 @@ a:nth-of-type(19) {
   top:0px;
 }
 }
+
+/* animatie 20 */
+
+a:nth-of-type(20) {
+  position: relative;
+  z-index: 20;
+}
+
+.code{
+  animation-name: code;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes code{
+0%{
+ opacity:0;
+ top:0px;
+}
+50%{
+  opacity:1;
+ 
+}
+100%{
+transform: rotate(360deg)
+}
+}

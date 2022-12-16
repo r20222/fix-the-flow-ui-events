@@ -187,3 +187,21 @@ interactionOpacity.addEventListener('animationend', opacity)
 function opacity(){
   interactionOpacity.classList.toggle('opacity')
 }
+
+// 20e button
+let code = document.querySelector('a:nth-of-type(20)')
+code.addEventListener('click', coding)
+// code.addEventListener('animationend', coding)
+
+function coding(){
+  code.classList.toggle('code')
+  if(code.innerHTML="Code"){
+    code.innerHTML="<&=>"
+  } 
+
+  // if(code.innerHTML='&lt;&amp;=&gt;') {
+  //   code.innerHTML="boe"
+  // }
+  // console.log(code.innerHTML)
+  
+}
