@@ -444,14 +444,36 @@ a:nth-of-type(17) {
   animation-name: down;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  max-height: 50px;
+  max-height: 65px;
+  max-width:200px;
   overflow: hidden;
 }
 
 @keyframes down{
 50%{
+  padding-top:40px;
+}
+}
 
-  padding-top:60px;
+/* animatie 18 */
+
+a:nth-of-type(18) {
+  position: relative;
+  z-index: 20;
+}
+
+.outside{
+  animation-name: outside;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  max-height: 65px;
+  max-width:150px;
   
+}
+
+@keyframes outside{
+50%{
+  font-size: 80px;
+  color: rgb(255, 14, 239);
 }
 }

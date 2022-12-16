@@ -167,3 +167,13 @@ interactionDown.addEventListener('animationend', down)
 function down(){
   interactionDown.classList.toggle('down')
 }
+
+// 18e button
+
+let interactionOutside = document.querySelector('a:nth-of-type(18)')
+interactionOutside.addEventListener('click', outside)
+interactionOutside.addEventListener('animationend', outside)
+
+function outside(){
+  interactionOutside.classList.toggle('outside')
+}
