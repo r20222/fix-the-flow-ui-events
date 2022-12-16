@@ -477,3 +477,30 @@ a:nth-of-type(18) {
   color: rgb(255, 14, 239);
 }
 }
+
+/* animatie 19 */
+
+a:nth-of-type(19) {
+  position: relative;
+  z-index: 20;
+}
+
+.opacity{
+  animation-name: opacity;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes opacity{
+10%{
+ opacity:0;
+ top:0px;
+}
+50%{
+  opacity:0;
+  top:500px;
+}
+100%{
+  top:0px;
+}
+}

@@ -177,3 +177,13 @@ interactionOutside.addEventListener('animationend', outside)
 function outside(){
   interactionOutside.classList.toggle('outside')
 }
+
+// 19e button
+
+let interactionOpacity = document.querySelector('a:nth-of-type(19)')
+interactionOpacity.addEventListener('click', opacity)
+interactionOpacity.addEventListener('animationend', opacity)
+
+function opacity(){
+  interactionOpacity.classList.toggle('opacity')
+}
