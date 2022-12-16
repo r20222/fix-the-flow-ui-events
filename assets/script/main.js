@@ -147,3 +147,13 @@ interactionDisappear.addEventListener('animationend', disappear)
 function disappear(){
   interactionDisappear.classList.toggle('disappear')
 }
+
+// 16e button
+
+let interactionToRight = document.querySelector('a:nth-of-type(16)')
+interactionToRight.addEventListener('click', right)
+interactionToRight.addEventListener('animationend', right)
+
+function right(){
+  interactionToRight.classList.toggle('to-the-right')
+}
