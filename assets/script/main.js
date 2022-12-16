@@ -157,3 +157,13 @@ interactionToRight.addEventListener('animationend', right)
 function right(){
   interactionToRight.classList.toggle('to-the-right')
 }
+
+// 17e button
+
+let interactionDown = document.querySelector('a:nth-of-type(17)')
+interactionDown.addEventListener('click', down)
+interactionDown.addEventListener('animationend', down)
+
+function down(){
+  interactionDown.classList.toggle('down')
+}

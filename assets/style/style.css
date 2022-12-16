@@ -429,9 +429,29 @@ a:nth-of-type(16) {
 
 @keyframes to-the-right{
 50%{
-  /* transform: scale(0);
-  background-color: yellow; */
   padding-left:200px;
+  
+}
+}
+
+/* animatie 17 */
+
+a:nth-of-type(17) {
+  position: relative;
+}
+
+.down{
+  animation-name: down;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  max-height: 50px;
+  overflow: hidden;
+}
+
+@keyframes down{
+50%{
+
+  padding-top:60px;
   
 }
 }
