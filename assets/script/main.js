@@ -139,3 +139,11 @@ function doubleDouble(){
   interactionDblBorder.classList.toggle('double-border')
 }
 
+// 15e button
+let interactionDisappear = document.querySelector('a:nth-of-type(15)')
+interactionDisappear.addEventListener('click', disappear)
+interactionDisappear.addEventListener('animationend', disappear)
+
+function disappear(){
+  interactionDisappear.classList.toggle('disappear')
+}
