@@ -209,11 +209,11 @@ function coding(){
 
 // device orientation events??
 
-window.addEventListener('devicemotion', (event) => {
-  let move = (`${event.acceleration.x} m/s2`);
+// window.addEventListener('devicemotion', (event) => {
+//   let move = (`${event.acceleration.x} m/s2`);
 
-  if (move >= 5 ){
-    alert(`${move.acceleration.x} m/s2`);
-  }
+//   if (move >= 5 ){
+//     alert(`${move.acceleration.x} m/s2`);
+//   }
   
-});
+// });
