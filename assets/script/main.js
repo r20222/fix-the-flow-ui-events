@@ -210,6 +210,10 @@ function coding(){
 // device orientation events??
 
 window.addEventListener('devicemotion', (event) => {
-  console.log(`${event.acceleration.x} m/s2`);
-  alert(`${event.acceleration.x} m/s2`);
+  let move = (`${event.acceleration.x} m/s2`);
+
+  if (move >= 5 ){
+    alert(`${move.acceleration.x} m/s2`);
+  }
+  
 });
