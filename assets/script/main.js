@@ -107,7 +107,7 @@ let interactionSuperDisco = document.querySelector('a:nth-of-type(11)')
 let selectAll = document.querySelectorAll('a')
 interactionSuperDisco.addEventListener('click', discoDisco)
 interactionSuperDisco.addEventListener('dblclick', discoDiscoEverywhere)
-interactionSuperDisco.addEventListener('animationend', discoDiscoEverywhere)
+interactionSuperDisco.addEventListener('animationend', discoDisco)
 
 function discoDisco(){
   interactionSuperDisco.classList.toggle('super-disco')
@@ -115,8 +115,9 @@ function discoDisco(){
 
 function discoDiscoEverywhere(){
   selectAll.forEach(function(a){
-  a.classList.toggle('super-disco')
+  a.classList.toggle('super-disco');
   })
+  // selectAll.addEventListener('animationend', discoDisco)
 }
 
 // 13e button
@@ -205,3 +206,10 @@ function coding(){
   // console.log(code.innerHTML)
   
 }
+
+// device orientation events??
+
+window.addEventListener('devicemotion', (event) => {
+  console.log(`${event.acceleration.x} m/s2`);
+  alert('Acceleration');
+});
