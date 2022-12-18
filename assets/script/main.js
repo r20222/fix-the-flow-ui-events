@@ -211,5 +211,5 @@ function coding(){
 
 window.addEventListener('devicemotion', (event) => {
   console.log(`${event.acceleration.x} m/s2`);
-  alert('Acceleration');
+  alert(`${event.acceleration.x} m/s2`);
 });
